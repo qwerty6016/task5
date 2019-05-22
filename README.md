@@ -1,6 +1,6 @@
 # task5
 
-npm install
+>npm install
 
 in root create .env file and inside the file set
 
@@ -8,4 +8,4 @@ in root create .env file and inside the file set
 
 <b>DATABASE_URL=yourdatabaseurl</b>
 
-node index
+>node index
