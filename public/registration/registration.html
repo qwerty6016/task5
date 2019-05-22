@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <p>
+      <a href="/">На главную</a>
+    </p>
+    <div id="registration-div">
+      <h4>Регистрация</h4>
+      Имя <input id="registration-name" type="text">
+      <br>
+      <br>
+      Email <input id="registration-email" type="email">
+      <br>
+      <br>
+      Пароль <input id="registration-password" type="password">
+      <br>
+      <br>
+      <button class="green-button" id="registration-submit-btn" onclick="registration()">Создать учетную запись</button>
+      <p id="registration-error"></p>
+    </div>
+  </body>
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="registration/registration.js"></script>
+  <script src="validator.min.js"></script>
+</html>

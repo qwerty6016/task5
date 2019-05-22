@@ -1,0 +1,111 @@
+h2 {
+  text-align: center;
+}
+
+.main-menu {
+  text-align: center;
+  margin: 30px;
+}
+
+.main-imgs {
+  display: inline-table;
+  border: 1px dashed LightGray;
+  margin: 5px;
+  padding: 15px;
+}
+
+.main-menu-links {
+  margin: 30px;
+}
+
+.game-square {
+  width: 70px;
+  height: 70px;
+  display: table-cell;
+  border: 1px solid LightGray;
+}
+
+.chessboard-wrapper {
+  border: 1px solid gray;
+  width: 632px;
+}
+
+.chessboard-angle {
+  width: 35px;
+  height: 35px;
+  display: table-cell;
+}
+
+.chessboard-top, .chessboard-bottom, .chessboard-left, .chessboard-right {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 20px;
+  color: gray;
+}
+
+.chessboard-left, .chessboard-right {
+  width: 35px;
+  height: 70px;
+}
+
+.chessboard-left {
+  border-right: 1px solid gray;
+}
+
+.chessboard-right {
+  border-left: 1px solid gray;
+}
+
+.chessboard-top, .chessboard-bottom {
+  width: 70px;
+  height: 35px;
+}
+
+.chessboard-top {
+  border-bottom: 1px solid gray;
+}
+
+.chessboard-bottom {
+  border-top: 1px solid gray;
+}
+
+.chessboard-white, .chessboard-black {
+  width: 70px;
+  height: 70px;
+  display: table-cell;
+}
+
+.chessboard-black {
+  background-color: black;
+}
+
+#login-div, #registration-div {
+  padding : 25px;
+  width: 300px;
+  margin : 25px;
+  border : 1px solid black;
+  background-color : white;
+  border-radius: 5px;
+  text-align : center;
+}
+
+input {
+  margin : 10px;
+  border-radius: 3px;
+}
+
+.green-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+#login-error, #registration-error {
+  color: red;
+}
