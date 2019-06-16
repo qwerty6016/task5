@@ -8,12 +8,15 @@
     <p>
       <a href="/">На главную</a>
     </p>
-    <p>
-      <label for="initPosition">Исходное положение:</label>
-      <br>
-      <input id="initPosition" type="text" placeholder="Пример: D4">
-    </p>
-    <button onclick="showMoves()">Ок</button>
+    <div id="task2">
+      <p>
+        <label for="initPosition">Исходное положение:</label>
+        <br>
+        <input v-model="initPosition" type="text" placeholder="Пример: D4">
+      </p>
+      <button @click="showMoves">Ок</button>
+    </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="task2/task2.js"></script>
 </html>

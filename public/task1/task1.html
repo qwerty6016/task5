@@ -8,17 +8,20 @@
     <p>
       <a href="/">На главную</a>
     </p>
-    <p>
-      <label for="firstNumber">Первое число:</label>
-      <br>
-      <input id="firstNumber" type="number" value="0.1" step=any>
-    </p>
-    <p>
-      <label for="secondNumber">Второе число:</label>
-      <br>
-      <input id="secondNumber" type="number" value="0.2" step=any>
-    </p>
-    <button onclick="sum()">Сложить</button>
+    <div id="task1">
+      <p>
+        <label for="firstNumber">Первое число:</label>
+        <br>
+        <input v-model="firstNumber" type="number" step=any>
+      </p>
+      <p>
+        <label for="secondNumber">Второе число:</label>
+        <br>
+        <input v-model="secondNumber" type="number" step=any>
+      </p>
+      <button @click="sum">Сложить</button>
+    </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="task1/task1.js"></script>
 </html>
