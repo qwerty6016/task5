@@ -17,6 +17,32 @@
       <a class="main-menu-links" href="users">Пользователи</a>
     </div>
     <div>
+      <h3>Аудиоплеер</h3>
+      <label for="audioPlayer">Название дорожки</label>
+      <audio id="audioPlayer" class="audio-player">
+        <source src="https://archive.org/download/calexico2006-12-02..flac16/calexico2006-12-02d1t02.mp3" type="audio/mpeg">
+      </audio>
+      <div>
+        <button onclick="playPauseBtnPressed('audioPlayer', this)">Play</button>
+        <span id="audioPlayerDurationPassed">0:00</span>
+        <input id="audioPlayerProgressBar" oninput="audioPlayerProgressBarInput('audioPlayer', this)" type="range" min="0" max="100" value="0">
+        <span id="audioPlayerDurationRemained">0:00</span>
+        <select onchange="document.getElementById('audioPlayer').playbackRate = this.value">
+          <option value="0.5">x0.5</option>
+          <option value="1" selected>x1</option>
+          <option value="1.25">x1.25</option>
+          <option value="1.5">x1.5</option>
+          <option value="1.75">x1.75</option>
+          <option value="2">x2</option>
+          <option value="2.25">x2.25</option>
+        </select>
+        <button onclick="muteUnmuteBtnPressed('audioPlayer', this)">Mute</button>
+        <input id="audioPlayerVolumeBar" oninput="document.getElementById('audioPlayer').volume = this.value" type="range" min="0" max="1" step="0.01" value="1">
+        <a href="https://archive.org/download/calexico2006-12-02..flac16/calexico2006-12-02d1t02.mp3" download>Download</a>
+        <button onclick="uploadAudio('audioPlayer')">Upload</button>
+      </div>
+    </div>
+    <div>
       <h3>Картинки</h3>
       <div class="main-imgs">
         <p><u><b><i>Задание 1</i></b></u></p>
@@ -40,5 +66,5 @@
       <iframe width="420" height="315" src="https://www.youtube.com/embed/779fMc8ubOo?autoplay=0"></iframe>
     </p>
   </body>
-  <script src="script.js"></script>
+  <script src="audioplayer.js"></script>
 </html>
