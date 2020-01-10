@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+    <link rel="stylesheet" href="questionnaire/questionnaire.css">
+  </head>
+  <body>
+    <div id="questionnaire-wrapper">
+      <p>
+        <img src="questionnaire/images/io.png">
+      </p>
+      <p id="delo">
+        <img src="questionnaire/images/delo.png">
+      </p>
+      <div id="fields-wrapper">
+        <div class="field">
+          <b class="field-title">Полное ФИО</b>
+          <img class="field-line" src="questionnaire/images/line.png">
+          <span class="field-data">Бирюков Егор Игоревич</span>
+        </div>
+        <div class="field">
+          <b class="field-title">Год рождения</b>
+          <img width="584" class="field-line" src="questionnaire/images/line.png">
+          <span class="field-data">1989</span>
+        </div>
+        <div class="field">
+          <b class="field-title">Место жительства</b>
+          <img width="528" class="field-line" src="questionnaire/images/line.png">
+          <span class="field-data">г. Луганск</span>
+        </div>
+        <div class="field">
+          <b class="field-title">Скайп</b>
+          <img width="684" class="field-line" src="questionnaire/images/line.png">
+          <span class="field-data">live:yegor_ktz221</span>
+        </div>
+        <div class="field">
+          <b class="field-title">Почта</b>
+          <img width="686" class="field-line" src="questionnaire/images/line.png">
+          <span class="field-data">yegor_ktz221@mail.ru</span>
+        </div>
+      </div>
+      <p style="margin-top: 80px;">
+        <b class="field-title" style="font-size: 30px;">Расскажите о себе чекбоксами</b>
+      </p>
+      <p class="field-title" style="font-size: 17px;">
+        Отметьте чекбоксами пункты, которые соответствуют вашим скиллам.
+        Отсутствие опыта не<br> означает, что у вас меньше шансов стать одним из наших товарищей.
+        Это означает, что вы<br> будете получать те задачи, с которыми гарантировано будете справляться.
+      </p>
+      <br>
+      <div id="checkboxes-container">
+        <div class="checkboxes">
+          <p>
+            <input id="checkbox1" type="checkbox" class="checkbox">
+            <label for="checkbox1"></label>
+            <b class="checkbox-title">Методология БЭМ</b>
+          </p>
+          <p>
+            <input id="checkbox2" type="checkbox" class="checkbox" checked>
+            <label for="checkbox2"></label>
+            <b class="checkbox-title">jQuery</b>
+          </p>
+          <p>
+            <input id="checkbox3" type="checkbox" class="checkbox">
+            <label for="checkbox3"></label>
+            <b class="checkbox-title">HAML</b>
+          </p>
+          <p>
+            <input id="checkbox4" type="checkbox" class="checkbox">
+            <label for="checkbox4"></label>
+            <b class="checkbox-title">SASS</b>
+          </p>
+        </div>
+        <div class="checkboxes">
+          <p>
+            <input id="checkbox5" type="checkbox" class="checkbox">
+            <label for="checkbox5"></label>
+            <b class="checkbox-title">LESS</b>
+          </p>
+          <p>
+            <input id="checkbox6" type="checkbox" class="checkbox">
+            <label for="checkbox6"></label>
+            <b class="checkbox-title">Jade</b>
+          </p>
+          <p>
+            <input id="checkbox7" type="checkbox" class="checkbox">
+            <label for="checkbox7"></label>
+            <b class="checkbox-title">Stylus</b>
+          </p>
+        </div>
+        <div class="checkboxes">
+          <p>
+            <input id="checkbox8" type="checkbox" class="checkbox">
+            <label for="checkbox8"></label>
+            <b class="checkbox-title">Знаю(изучаю) Angular</b>
+          </p>
+          <p>
+            <input id="checkbox9" type="checkbox" class="checkbox">
+            <label for="checkbox9"></label>
+            <b class="checkbox-title">Верстка рассылок</b>
+          </p>
+          <p>
+            <input id="checkbox10" type="checkbox" class="checkbox">
+            <label for="checkbox10"></label>
+            <b class="checkbox-title">Адаптивная верстка</b>
+          </p>
+        </div>
+      </div>
+      <p style="margin-top: 50px;">
+        <b class="field-title" style="font-size: 30px;">Уровень владения JavaScript</b>
+      </p>
+      <input type="range" min="0" max="1000" value="1000" step="1" id="slider">
+      <img width="760" src="questionnaire/images/sliderbg.png">
+      <div>
+        <div style="float: left">
+          <b class="slider-text">Не владею</b>
+        </div>
+        <div style="margin-left: 73px; float: left">
+          <b class="slider-text">
+            Использую готовые решения
+          </b>
+        </div>
+        <div style="margin-left: 30px; float: left">
+          <b class="slider-text">
+            Использую готовые решения <br>
+            и умею их переделывать
+          </b>
+        </div>
+        <div style="margin-left: 35px; float: left">
+          <b class="slider-text">Пишу сложный JS с нуля</b>
+        </div>
+      </div>
+      <div style="margin-top: 90px; padding-bottom: 200px;">
+        <b class="field-title" style="font-size: 30px;">Дата заполнения</b>
+        <img id="dateline" src="questionnaire/images/dateline.png">
+        <span class="field-data">10.01.2020</span>
+      </div>
+    </div>
+  </body>
+  <script src="questionnaire/questionnaire.js"></script>
+</html>

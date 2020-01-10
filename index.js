@@ -49,6 +49,9 @@ router
   .get('/registration', async ctx => {
     await send(ctx, '/public/registration/registration.html');
   })
+  .get('/questionnaire', async ctx => {
+    await send(ctx, '/public/questionnaire/questionnaire.html');
+  })
   .get('/users', async ctx => {
     await Promise.resolve(users.getUsers(db))
       .then(result => {
